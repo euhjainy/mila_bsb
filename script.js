@@ -168,6 +168,10 @@ document.getElementById('menu-info').addEventListener('click', function() {
     openOverlay('overlay-info');
 });
 
+document.getElementById('menu-tatouage').addEventListener('click', function() {
+    openOverlay('overlay-tatouage');
+});
+
 function openOverlay(overlayId) {
     document.getElementById(overlayId).style.display = 'block';
     document.getElementById(overlayId).addEventListener('click', function(event) {
