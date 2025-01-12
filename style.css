@@ -610,7 +610,7 @@ body {
   
   /* CACHÉ */
 
-    #introduction {
+    /* #introduction {
      display: none;
     }
     #introduction img {
@@ -618,7 +618,7 @@ body {
     }
     #main-content {
       display: block;
-    }
+    } */
     .section-left {
      display: none;
     }
