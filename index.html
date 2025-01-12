@@ -16,7 +16,7 @@
 
 
 <!-- Introduction binder -->
-  <div id="introduction">
+  <!-- <div id="introduction">
       <img src="medias/binder_mila.gif" alt="Image d'introduction">
   </div>
   <script>
@@ -58,7 +58,66 @@
           }
         }
       });
+  </script> -->
+
+  <div id="introduction">
+    <img src="medias/binder_mila.gif" alt="Image d'introduction">
+  </div>
+  <div id="main-content" style="display: none; opacity: 0;">
+    <!-- Contenu principal -->
+  </div>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Vérifie si l'écran est suffisamment large (769px ou plus)
+      if (window.matchMedia("(min-width: 769px)").matches) {
+        // Version bureau ou tablette avec délai d'apparition
+        setTimeout(function () {
+          const intro = document.getElementById('introduction');
+          const mainContent = document.getElementById('main-content');
+  
+          if (intro && mainContent) {
+            // Transition de l'introduction
+            intro.style.transition = 'opacity 0.1s ease-out';
+            intro.style.opacity = '0';
+  
+            setTimeout(function () {
+              // Cache l'introduction et affiche le contenu principal
+              intro.style.display = 'none';
+              mainContent.style.display = 'block';
+  
+              setTimeout(function () {
+                // Transition pour afficher le contenu principal
+                mainContent.style.transition = 'opacity 0.1s ease-in';
+                mainContent.style.opacity = '1';
+  
+                // Ajuste la position des éléments Slick si nécessaire
+                if (typeof $ !== "undefined" && $('.your-class').slick) {
+                  $('.your-class').slick('setPosition');
+                }
+              }, 5);
+            }, 80);
+          }
+        }, 4300);
+      } else {
+        // Version mobile : pas de délai, l'introduction est immédiatement masquée
+        const intro = document.getElementById('introduction');
+        const mainContent = document.getElementById('main-content');
+  
+        if (intro && mainContent) {
+          intro.style.display = 'none'; // Cache l'introduction
+          mainContent.style.display = 'block'; // Affiche le contenu principal
+          mainContent.style.opacity = '1'; // Rend le contenu principal visible
+  
+          // Ajuste la position des éléments Slick si nécessaire
+          if (typeof $ !== "undefined" && $('.your-class').slick) {
+            $('.your-class').slick('setPosition');
+          }
+        }
+      }
+    });
   </script>
+  
 
 
 
@@ -132,7 +191,7 @@
                       <h4>Jeanette</h4>
                       <p>Techniques mixtes sur papier <br>impression jet d’encre sur papier glacé <br> avril-juin 2024</p>
                       <img id="iliona" src="medias/collaboration_Iliona/gif_iliona.gif" data-overlay="8"> 
-                      <h4><span>Le Lapin</span> & <span>rater une rupture pour les nuls</span>, Iliona. </h4> 
+                      <h4><span class="span1">Le Lapin</span> & <span class="span1">rater une rupture pour les nuls</span>, Iliona. </h4> 
                       <p>Illustration <br> cover single, merchandising et web</p>
                       <img id="Roy_Mustang"src="medias/print_roy_Mustang.jpg" data-overlay="2"> 
                       <p>Graphite et crayon de couleur sur papier <br> 21x 29.7<br> juin 2024</p>
@@ -154,7 +213,7 @@
                       <img id="idk" src="medias/EPSON014.jpg" data-overlay="7"> 
                       <p>Graphite sur papier <br> 29.7x 42 <br> juin 2024</p> 
                       <img  src="medias/2025/nouvelle_vague.jpg" data-overlay="16"> 
-                      <h4><span>NOUVELLE VAGUE ÉMOTIVE ( reste calme et roule très loin )</span><br> cover de single pour Eugène</h4>
+                      <h4><span class="span1">NOUVELLE VAGUE ÉMOTIVE ( reste calme et roule très loin )</span><br> cover de single pour Eugène</h4>
                       <p>Pastel sec et grasse, crayons de couleur et graphite sur papier <br> 30x 30<br> octobre 2024</p> 
                       <img id="papillons" src="medias/2025/papillon.jpg" data-overlay="17"> 
                       <h4>allongée, papillon et poussins</h4>
@@ -193,7 +252,7 @@
                   <h4>Jeanette</h4>
                   <p>Techniques mixtes sur papier <br>impression jet d’encre sur papier glacé <br> avril-juin 2024</p>
                   <img id="iliona" src="medias/collaboration_Iliona/gif_iliona.gif" data-overlay="8"> 
-                  <h4><span>Le Lapin</span> & <span>rater une rupture pour les nuls</span>, Iliona. </h4> 
+                  <h4><span class="span1">Le Lapin</span> & <span class="span1">rater une rupture pour les nuls</span>, Iliona. </h4> 
                   <p>Illustration <br> cover single, merchandising et web</p>
                   <img id="Roy_Mustang"src="medias/print_roy_Mustang.jpg" data-overlay="2"> 
                   <p>Graphite et crayon de couleur sur papier <br> 21x 29.7<br> juin 2024</p>
@@ -255,7 +314,7 @@
                   <img id="clowns" src="medias/2025/two_clowns.jpg" data-overlay="18"> 
                   <p>Pastel sec et grasse, crayons de couleur et graphite sur papier<br> 21x 29.7<br> décembre 2024</p> 
                   <img src="medias/2025/nouvelle_vague.jpg" data-overlay="16"> 
-                  <h4><span>NOUVELLE VAGUE ÉMOTIVE ( reste calme et roule très loin )</span>)<br> cover de single pour Eugène</h4>
+                  <h4><span class="span1">NOUVELLE VAGUE ÉMOTIVE ( reste calme et roule très loin )</span>)<br> cover de single pour Eugène</h4>
                   <p>Pastel sec et grasse, crayons de couleur et graphite sur papier <br> 30x 30<br> octobre 2024</p> 
                   <img id="papillons" src="medias/2025/papillon.jpg" data-overlay="17"> 
                   <h4>allongée, papillon et poussins</h4>
@@ -664,7 +723,7 @@
         <p>Mila Bisbrouck</p>
        </a>
    </nav>
-       <h2> <span>Le Lapin</span> & <span>rater une rupture pour les nuls</span>, Iliona.</h2>
+       <h2> <span class="span1">Le Lapin</span> & <span class="span1">rater une rupture pour les nuls</span>, Iliona.</h2>
         <p id="explications">Illustration et titrage pour une cover de single, site internet et merchandising pour la chanteuse <a href="https://shop.iliona.be/fr-fr/">Iliona</a> </p>
         <div class="colonne2">
              <div class="colonnes2"> 
