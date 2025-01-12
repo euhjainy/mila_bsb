@@ -198,6 +198,11 @@ body {
           color: rgb(0, 0, 0);
           filter: blur(0.5px);
         }
+
+        span{
+          font-style: italic;
+          color: rgb(44, 44, 44);
+        }
       
 /* section scroll */
         .autre{
