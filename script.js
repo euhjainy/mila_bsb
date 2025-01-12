@@ -186,3 +186,10 @@ function closeOverlay(overlayId) {
 
 
 
+
+
+
+
+console.log("Introduction:", intro);
+console.log("Main Content:", mainContent);
+

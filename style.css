@@ -21,6 +21,12 @@ body {
 #main-content {
       display: none;
       opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    #main-content.show {
+      display: block; /* Affiché */
+      opacity: 1; /* Entièrement visible */
     }
     #main-content2 {
     opacity: 1;

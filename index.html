@@ -16,7 +16,7 @@
 
 
 <!-- Introduction binder -->
-  <!-- <div id="introduction">
+ <div id="introduction">
       <img src="medias/binder_mila.gif" alt="Image d'introduction">
   </div>
   <script>
@@ -58,68 +58,7 @@
           }
         }
       });
-  </script> -->
-
-  <div id="introduction">
-    <img src="medias/binder_mila.gif" alt="Image d'introduction">
-  </div>
-  <div id="main-content" style="display: none; opacity: 0;">
-    <!-- Contenu principal -->
-  </div>
-  
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      // Vérifie si l'écran est suffisamment large (769px ou plus)
-      if (window.matchMedia("(min-width: 769px)").matches) {
-        // Version bureau ou tablette avec délai d'apparition
-        setTimeout(function () {
-          const intro = document.getElementById('introduction');
-          const mainContent = document.getElementById('main-content');
-  
-          if (intro && mainContent) {
-            // Transition de l'introduction
-            intro.style.transition = 'opacity 0.1s ease-out';
-            intro.style.opacity = '0';
-  
-            setTimeout(function () {
-              // Cache l'introduction et affiche le contenu principal
-              intro.style.display = 'none';
-              mainContent.style.display = 'block';
-  
-              setTimeout(function () {
-                // Transition pour afficher le contenu principal
-                mainContent.style.transition = 'opacity 0.1s ease-in';
-                mainContent.style.opacity = '1';
-  
-                // Ajuste la position des éléments Slick si nécessaire
-                if (typeof $ !== "undefined" && $('.your-class').slick) {
-                  $('.your-class').slick('setPosition');
-                }
-              }, 5);
-            }, 80);
-          }
-        }, 4300);
-      } else {
-        // Version mobile : pas de délai, l'introduction est immédiatement masquée
-        const intro = document.getElementById('introduction');
-        const mainContent = document.getElementById('main-content');
-  
-        if (intro && mainContent) {
-          intro.style.display = 'none'; // Cache l'introduction
-          mainContent.style.display = 'block'; // Affiche le contenu principal
-          mainContent.style.opacity = '1'; // Rend le contenu principal visible
-  
-          // Ajuste la position des éléments Slick si nécessaire
-          if (typeof $ !== "undefined" && $('.your-class').slick) {
-            $('.your-class').slick('setPosition');
-          }
-        }
-      }
-    });
   </script>
-  
-
-
 
 
 <!-- menu, photothèque, caroussel -->
