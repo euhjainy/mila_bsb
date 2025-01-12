@@ -326,9 +326,7 @@ body {
           transition: all .1s ease-in; 
         }        
         .close {
-          background-color: rgba(155,155,155,0);
-          width: 1080px;
-          height: 1920px;
+        background-color: rgba(155,155,155,0);  
         position:absolute;
         text-align: right;
         top: 0; 
@@ -338,12 +336,29 @@ body {
         z-index: 10000;
         color: rgb(167, 167, 167);
         transition: color 2s ease-out, filter 2s ease-out, font-style 2s ease-out;
-        }   
+        }  
+        .close3 {
+          /* background-color: aquamarine; */
+          position:absolute;
+          text-align: right;
+          bottom: 0; 
+          height: 600px;
+          width: 1080px;
+          right: 10px;
+          font-size: 30px;
+          cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path fill="%23000000" stroke="%23000000" stroke-width="0.25" d="M15 9V4.5c0-.83-.67-1.5-1.5-1.5h-3C9.67 3 9 3.67 9 4.5V9H4.5C3.67 9 3 9.67 3 10.5v3c0 .83.67 1.5 1.5 1.5H9v4.5c0 .83.67 1.5 1.5 1.5h3c.83 0 1.5-.67 1.5-1.5V15h4.5c.83 0 1.5-.67 1.5-1.5v-3c0-.83-.67-1.5-1.5-1.5H15Z"></path></svg>') 10 10, auto;
+          z-index: 10000;
+          color: rgba(155, 155, 155,0);
+          transition: color 2s ease-out, filter 2s ease-out, font-style 2s ease-out;
+          }  
+
         .close:hover {
         filter: blur(1px);
         color: rgb(0, 0, 0);
         transition: color 0.1s ease-in, filter 0.1s ease-in, font-style 0.1s ease-in;
-        }     
+        }    
+        
+       
         #overlaylogo{
         padding-top: 0px;
         margin-left: 0px;
@@ -441,25 +456,16 @@ body {
           color: rgb(167, 167, 167);
         }
         .close2 {
-          width: 20vw;
-          height:100vh;
-          background-color: rgba(155,155,155,0);
           position: absolute;
-          text-align: right;
-          top: 0;
-          right: 10px;
+          margin-top: 8vh;
+          width: 20vw;
+          height:90vh;
           font-size: 2vw;
           cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path fill="%23000000" stroke="%23000000" stroke-width="0.25" d="M15 9V4.5c0-.83-.67-1.5-1.5-1.5h-3C9.67 3 9 3.67 9 4.5V9H4.5C3.67 9 3 9.67 3 10.5v3c0 .83.67 1.5 1.5 1.5H9v4.5c0 .83.67 1.5 1.5 1.5h3c.83 0 1.5-.67 1.5-1.5V15h4.5c.83 0 1.5-.67 1.5-1.5v-3c0-.83-.67-1.5-1.5-1.5H15Z"></path></svg>') 10 10, auto;
-          color: rgb(167, 167, 167);
-          transition: all 1s ease-out; 
+          color: rgba(155, 155, 155,0);
+         
         }
-        .close2:hover {
-          filter: blur(1px);
-          color: rgb(0, 0, 0);
-          transition: color 0.1s ease-in, filter 0.1s ease-in, font-style 0.1s ease-in;
-          opacity: 0.4;
-          transition: 0.3s;
-        }
+        
         .overlay2 h2, .overlay2 p {
           font-size: 1.2vw;
           font-family: police1;
@@ -512,24 +518,20 @@ body {
           background-color: rgb(255, 255, 255); 
           height: 100vh; 
         }
-        .overlayCredits .closeCredits {
+        .closeCredits {
           position: absolute;
+          width: 20vw;
+          height:100vh;
+          /* background-color: aquamarine; */
           top: 0;
-          right: 10px;
           font-size: 2vw;
           cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path fill="%23000000" stroke="%23000000" stroke-width="0.25" d="M15 9V4.5c0-.83-.67-1.5-1.5-1.5h-3C9.67 3 9 3.67 9 4.5V9H4.5C3.67 9 3 9.67 3 10.5v3c0 .83.67 1.5 1.5 1.5H9v4.5c0 .83.67 1.5 1.5 1.5h3c.83 0 1.5-.67 1.5-1.5V15h4.5c.83 0 1.5-.67 1.5-1.5v-3c0-.83-.67-1.5-1.5-1.5H15Z"></path></svg>') 10 10, auto;
-          color: rgb(167, 167, 167);
-          transition: color 2s ease-out, filter 2s ease-out, font-style 2s ease-out;
+          color: rgba(155, 155, 155,0);
         }
-        .closeCredits:hover {
-          filter: blur(2px);
-          color: rgb(0, 0, 0);
-          transition: color 0.1s ease-in, filter 0.1s ease-in, font-style 0.1s ease-in;
-          opacity: 0.4;
-          transition: 0.3s;
-        }
+       
         .overlayCredits h2, .overlayCredits p {
-          font-size: 1.2vw;
+          font-size: 1vw;
+          text-align: right;
           font-family: police1;
           color: rgb(167, 167, 167);
         }
