@@ -326,7 +326,11 @@ body {
           transition: all .1s ease-in; 
         }        
         .close {
+          background-color: rgba(155,155,155,0);
+          width: 1080px;
+          height: 1920px;
         position:absolute;
+        text-align: right;
         top: 0; 
         right: 10px;
         font-size: 30px;
@@ -336,7 +340,7 @@ body {
         transition: color 2s ease-out, filter 2s ease-out, font-style 2s ease-out;
         }   
         .close:hover {
-        filter: blur(2px);
+        filter: blur(1px);
         color: rgb(0, 0, 0);
         transition: color 0.1s ease-in, filter 0.1s ease-in, font-style 0.1s ease-in;
         }     
@@ -436,8 +440,12 @@ body {
           text-decoration: none;
           color: rgb(167, 167, 167);
         }
-        .overlay2 .close2 {
+        .close2 {
+          width: 20vw;
+          height:100vh;
+          background-color: rgba(155,155,155,0);
           position: absolute;
+          text-align: right;
           top: 0;
           right: 10px;
           font-size: 2vw;
@@ -446,7 +454,7 @@ body {
           transition: all 1s ease-out; 
         }
         .close2:hover {
-          filter: blur(2px);
+          filter: blur(1px);
           color: rgb(0, 0, 0);
           transition: color 0.1s ease-in, filter 0.1s ease-in, font-style 0.1s ease-in;
           opacity: 0.4;
