@@ -1,16 +1,12 @@
 @font-face {
-  font-family: police1;
-  src: url("fonts/Inter_18pt-ExtraLight.ttf")
+  font-family: "police1";
+  src: url("fonts/Inter-Light.otf")
 }
 @font-face {
-  font-family: police2;
-  src: url("fonts/Inter_24pt-Regular.ttf")
+  font-family: "police2";
+  src: url("fonts/Inter-Regular.otf")
 }
 
-@font-face {
-  font-family: police3;
-  src: url("fonts/KUPOLE-Regular.ttf")
-}
 
 body {
     margin: 0;
