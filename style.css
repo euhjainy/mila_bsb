@@ -350,7 +350,7 @@ body {
         transition: color 2s ease-out, filter 2s ease-out, font-style 2s ease-out;
         }  
         .close3 {
-          background-color: aquamarine;
+          /* background-color: aquamarine; */
           position:absolute;
           text-align: right;
           /* bottom: 0;  */
