@@ -616,9 +616,10 @@ body {
     #introduction img {
       display: none;
     }
-    /* #main-content {
-      display: block;
-    } */
+    #main-content {
+     background-color: aquamarine;
+     padding-bottom: 50px;
+    }
     .section-left {
      display: none;
     }
